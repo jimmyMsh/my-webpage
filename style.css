@@ -1,0 +1,80 @@
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #B2A599;
+    /* Adding a subtle background animation */
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Keyframes for background animation */
+@keyframes backgroundAnimation {
+    from { background-color: #B2A599; }
+    to { background-color: #D3C0B0; }
+}
+
+/* Styling for homepage container */
+/* ...existing CSS reset and body styling... */
+
+/* Homepage container */
+.homepage-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: -10vh; /* Shift upwards */
+}
+
+/* Introduction section styling */
+.intro-section h1, .intro-section p {
+    /* ...existing styles... */
+    margin-bottom: 20px; /* Increase spacing between text and image */
+}
+
+/* Home button styling */
+#homeButton {
+    /* ...existing styles... */
+    font-size: 1.4rem; /* Increase font size */
+    padding: 15px 25px; /* Increase button size */
+    margin-top: 20px; /* Spacing under the text */
+}
+
+/* Profile image styling */
+.profile-image {
+    /* ...existing styles... */
+    width: 350px; /* Increase image size */
+    animation: bounceIn 2s; /* New bounce animation */
+}
+
+/* Bounce animation for profile image */
+@keyframes bounceIn {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Background animation */
+body {
+    /* ...existing styles... */
+    background-image: linear-gradient(45deg, #B2A599 50%, #D3C0B0 50%);
+    background-size: 200% 100%;
+    animation: slideBg 10s infinite linear;
+}
+
+/* Background sliding animation */
+@keyframes slideBg {
+    0% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust responsive styles as needed */
+}
