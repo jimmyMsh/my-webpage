@@ -8,9 +8,4 @@ document.getElementById('homeButton').addEventListener('click', function() {
     // Potential additional interactive feature:
     // For example, a toast message saying "Welcome back to the homepage!"
 });
-
-// Animation for the profile image on load
-window.onload = function() {
-    document.querySelector('.profile-image').classList.add('fadeIn');
-};
 // Additional JS code for more interactivity can be added here

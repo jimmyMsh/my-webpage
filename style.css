@@ -18,31 +18,28 @@ body {
 /* Homepage container styling */
 .homepage-container {
     display: flex;
-    align-items: center;
     width: 100%;
-    max-width: fit-content;
 }
 
 /* Profile section styling */
 .profile-section {
-    width: 60%;
-    height: 100vh;
-    max-width: 618px;
+    width: 40%; /* 40% width of the viewport */
+    height: 100vh; /* Full height of the viewport */
     display: flex;
-    justify-content: flex-end; /* Align the image closer to the text */
+    justify-content: flex-end;
     align-items: center;
-    margin-right: 0px; /* Reduced margin to bring image closer */
 }
 
 /* Profile image styling */
 .profile-image {
-    width: 80%;
-    height: auto;
+    width: 100%; /* Full width of its container */
+    height: 100%; /* Full height of its container */
+    object-fit: cover; /* Ensure image covers the entire area without distortion */
 }
 
 /* Introduction section styling */
 .intro-section {
-    width: 60%;
+    width: 60%; /* Remaining width of the viewport */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -50,7 +47,6 @@ body {
     align-items: center;
     padding: 20px;
     line-height: 1.6;
-    margin-left: 0%;
 }
 
 /* Home button styling */
@@ -74,7 +70,7 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 901px) {
     .profile-section, .intro-section {
         width: 100%;
         max-height: 500px;
