@@ -127,22 +127,6 @@ body {
     display: none;
 }
 
-/* Existing CSS... */
-
-/* Full-screen black overlay for transition */
-.black-overlay {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: 9999; /* Ensures it's above everything else */
-    transition: opacity 0.5s ease;
-}
-
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .profile-section, .intro-section {
