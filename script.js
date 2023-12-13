@@ -9,3 +9,12 @@ document.getElementById('homeButton').addEventListener('click', function() {
     // For example, a toast message saying "Welcome back to the homepage!"
 });
 // Additional JS code for more interactivity can be added here
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var welcomeScreen = document.getElementById('welcomeScreen');
+        welcomeScreen.classList.add('animate__animated', 'animate__fadeOut');
+        setTimeout(function() {
+            welcomeScreen.style.display = 'none';
+        }, 4000); // This controls the fade-out duration
+    }, 500); // This controls how long the welcome screen is displayed
+});
