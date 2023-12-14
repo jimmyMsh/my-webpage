@@ -33,6 +33,6 @@ document.getElementById('homeButton').addEventListener('click', function() {
 
     // After the animation, redirect to the next page
     setTimeout(() => {
-        window.location.href = '/nextPage.html'; // Change to the actual URL of your next page
+        window.location.href = '/home.html'; // Change to the actual URL of your next page
     }, 2000); // This should be greater than the fade-in animation duration
 });
