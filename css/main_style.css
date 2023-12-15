@@ -201,7 +201,6 @@ footer {
 }
 
 #calendly-bubble {
-    position: fixed;
     bottom: 10px;
     right: 40px;
     background-color: black;
