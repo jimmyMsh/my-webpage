@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN link for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Professional Profile</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/main_style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="js/main_script.js" defer></script>
+</head>
+<body>
+    <!-- Header section for introduction and contact information -->
+    <header>
+        <div class="header-content"> <!-- Wrapped content in a div for styling the bubble -->
+            <h1>Welcome to My Interactive Profile</h1>
+
+            <!-- Contact information with social media buttons -->
+            <div class="contact-info">
+                <!-- GitHub Button -->
+                <a href="https://github.com/jimmyMsh" target="_blank" class="social-btn github-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/jimmy-mishan-1442ba264/" target="_blank" class="social-btn linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Email Button -->
+                <a href="mailto:jimmymishan2004@gmail.com" class="social-btn email-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Interactive text input area -->
+        <section id="interactive-area">
+             <!-- Adding the responsive image with rounded corners -->
+            <img src="images/interactive.jpeg" alt="Interactive Image" id="interactive-image">
+            
+            <p>Type a keyword or select an icon above to explore :)</p>
+            <div class="input-wrapper">
+                <input type="text" id="dynamic-input" placeholder="Type here... (e.g., 'GitHub', 'LinkedIn')">
+                <button id="submit-button">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Jimmy Mishan</p>
+    </footer>
+
+    <!-- Calendly integration -->
+    <div id="calendly-bubble">
+        <p class="bubble-title">Enjoyed exploring my profile? Click me to connect!</p>
+        <p class="bubble-text">If my skills and experience are in line with what you're looking for, I'd love to discuss how I can contribute to your team.</p>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/jimmymishan/30min?hide_gdpr_banner=1&background_color=000000&text_color=ffffff&primary_color=b2aa9d" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+</body>
+</html>
