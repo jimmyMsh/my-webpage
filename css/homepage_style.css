@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #b2a599 40%, #675f57);
+    background: linear-gradient(to bottom, #b2a599 45%, #35312c);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 #welcomeCircle {
-    background: url('./images/circle.png') no-repeat center;
+    background: url('/images/circle.png') no-repeat center;
     background-size: contain;
     width: 400px;
     height: 400px;
