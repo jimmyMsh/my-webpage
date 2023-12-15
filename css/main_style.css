@@ -256,6 +256,12 @@ footer {
         padding: 18px
     }
 
+      /* Increase the size of social buttons on smaller screens */
+    .social-btn {
+        font-size: 250%; /* Increase font size */
+        padding: 15px; /* Increase padding */
+    }
+
     #interactive-area {
         font-size: 4vw; /* Adjust font size for readability */
         padding: 5%; /* Adjust padding */

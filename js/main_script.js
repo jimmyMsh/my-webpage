@@ -58,6 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Open the meeting link in a new tab
                 window.open('https://calendly.com/jimmymishan/30min', '_blank');
                 break;
+            case 'linkedin':
+                //Open linkedin link in new tab
+                window.open('https://www.linkedin.com/in/jimmy-mishan-1442ba264/', '_blank')
+                break;
             default:
                 // Display an alert for invalid input
                 alert('Enter valid input - GitHub, Email, Resume, or Meeting');

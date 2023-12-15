@@ -20,7 +20,7 @@
 }
 
 #welcomeCircle {
-    background: url('/images/circle.png') no-repeat center;
+    background: url('./images/circle.png') no-repeat center;
     background-size: contain;
     width: 400px;
     height: 400px;
