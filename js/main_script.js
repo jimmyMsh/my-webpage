@@ -155,3 +155,29 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation(); // Prevent the document click event from firing
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Access the input element
+    var inputArea = document.querySelector("#dynamic-input");
+
+    // Access the Calendly bubble
+    var calendlyBubble = document.querySelector("#calendly-bubble");
+
+    // Function to handle focus
+    function handleFocus(){
+        // Store the original position
+        calendlyBubble.dataset['originalPosition'] = calendlyBubble.style.bottom;
+    
+        // Increase bottom property to move the Calendly bubble
+        calendlyBubble.style.bottom = (window.innerHeight - inputArea.getBoundingClientRect().bottom - 300) + "px";
+    }
+
+    // Function to handle blur
+    function handleBlur(){
+        // Reset the bottom property of the Calendly bubble to its original position
+        calendlyBubble.style.bottom = calendlyBubble.dataset['originalPosition'];   
+    }
+    
+    inputArea.addEventListener('focus', handleFocus);
+    inputArea.addEventListener('blur', handleBlur);
+});
