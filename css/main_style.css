@@ -212,6 +212,7 @@ footer {
     width: 300px;
     position: sticky;
     cursor: pointer;
+    transition: bottom 0.5s ease;
 }
 
 .bubble-title {
