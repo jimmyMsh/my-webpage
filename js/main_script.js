@@ -104,16 +104,16 @@ function processInput(value) {
 // Function to handle the typing animation effect
 function handleTypeWriterEffect() {
     // Array of phrases to cycle through in the typewriter effect
-    const phrases = ['Resume', 'GitHub', 'LinkedIn', 'Email', "Meeting"];
-    let currentPhrase = 0; // Index of the current phrase
-    let currentLetter = 0; // Position of the current letter in the phrase
-    let isDeleting = false; // Flag if in deleting mode
-    let typingSpeed = 200; // Typing speed in milliseconds
-    let typewriterActive = true; // Flag to control whether the typewriter effect is active
+    phrases = ['Resume', 'GitHub', 'LinkedIn', 'Email', "Meeting"];
+    currentPhrase = 0; // Index of the current phrase
+    currentLetter = 0; // Position of the current letter in the phrase
+    isDeleting = false; // Flag if in deleting mode
+    typingSpeed = 200; // Typing speed in milliseconds
+    typewriterActive = true; // Flag to control whether the typewriter effect is active
 
     // Reference to the input element where the effect will be displayed
-    const dynamicInput = document.getElementById('dynamic-input');
-     
+    dynamicInput = document.getElementById('dynamic-input');
+    
     // Add event listener for user input in the text field
     dynamicInput.addEventListener('input', function () {
         // Check if the input field is empty
