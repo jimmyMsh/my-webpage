@@ -80,7 +80,7 @@ function processInput(value) {
             break;
         case 'resume':
             // Open the resume PDF in a new tab
-            window.open('/docs/ResumeFinal.pdf', '_blank');
+            window.open('/docs/Resume.pdf', '_blank');
             break;
         case 'meeting':
             // Open the meeting link in a new tab
