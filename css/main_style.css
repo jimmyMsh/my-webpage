@@ -1,7 +1,6 @@
 /* Importing the Montserrat font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* Body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -13,13 +12,12 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Aligns all body contents to the center of the page */
-    overflow-x: hidden;
-    overflow-y: auto; /* Enable vertical scrolling in all devices */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling in Webkit browsers such as Safari */
-    -webkit-font-smoothing: antialiased; /* Specify font smoothing for Webkit browsers */
-    -moz-osx-font-smoothing: grayscale; /* Specify font smoothing for Firefox */
-    text-rendering: optimizeLegibility; /* Optimize text for legibility */
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* Keyframes for Background Gradient Animation */
@@ -33,124 +31,82 @@ body {
 
 header {
     text-align: center;
-    padding-top: 20px; /* Reduced padding to limit the top area */
+    padding-top: 20px;
     margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header-content {
     background-color: black; 
     color: white;
-    padding: 20px; /* Adjust this value as per your design */
+    padding: 20px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: inline-block;
-    font-family: 'Montserrat', sans-serif; /* Ensuring Montserrat font */
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    font-size: calc(14px + 0.5vw); 
 }
 
-/* Styling for the name on the left side */
-header .name {
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-/* Contact information section styling */
 header .contact-info {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    align-items: center; /* Aligns buttons vertically */
-    flex-direction: row; /* Stacks buttons vertically */
-    margin-top: 20px; /* Adds space between the title and buttons */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-/* General styling for social media buttons */
 .social-btn {
-    padding: 12px; 
+    padding: 12px;
     margin: 5px;
     border: none;
-    background-color: none; 
-    color: black; 
-    font-size: 200%; 
+    background-color: transparent;
+    color: white;
+    font-size: calc(16px + 1vw); 
     cursor: pointer;
     transition: 0.3s ease;
     align-items: center;
 }
 
-.social-btn:hover {
-    opacity: 0.7;
+.social-btn i {
+    color: white;
 }
 
-/* LinkedIn Button Styling */
-.linkedin-btn i {
-    color: #ffffff; 
+.resume-btn {
+    font-size: 1.5rem;
+    color: white;
 }
 
-/* Email Button Styling */
-.email-btn i {
-    color: #ffffff; 
-}
-
-/* GitHub Button Styling */
-.github-btn i {
-    color: #ffffff; 
-}
-
-/* Main content area styling */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    max-width: 1500px; /* Sets a maximum width for the main content area */
     width: 100%;
 }
 
 #interactive-area {
-    font-size: 2em;
-    background-color: black; 
-    color: white; 
-    padding: 10%;
+    font-size: calc(14px + 0.5vw); 
+    background-color: black;
+    color: white;
+    padding: 5%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 600px;
-    max-height: 450px;
-
+    width: 85%; 
 }
 
-/* Styling for the interactive image */
 #interactive-image {
-    max-width: 100%; /* Allows image to be as wide as its container */
-    height: auto; /* Maintain aspect ratio */
-    width: auto;
-    border-radius: 5px; /* Slightly rounded corners */
-    margin-bottom: 10px; /* Space between image and text */
-}
-
-/* Styling for input and button elements */
-input[type="text"], button {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd; 
-    border-radius: 4px;
-}
-
-#submit-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 0 12px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-}
-#submit-button:hover {
-    opacity: 0.8;
-    transform: scale(1.5); /* Scale up the button */
-}
-
-:root {
-    --translate-y: 0px; /* Default translation */
+    width: 50%;
+    height: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .input-wrapper {
@@ -161,10 +117,10 @@ input[type="text"], button {
     background: linear-gradient(-45deg, #B2AA9D, #17202D, #694542, #795940);
     animation: gradient-border 8s ease infinite;
     background-size: 400% 400%;
-    width: 90%;
+    width: 100%; 
     max-width: 600px;
-    margin: 0 auto;
-    transform: translateY(var(--translate-y));
+    margin: 10px auto;
+    box-sizing: border-box; 
 }
 
 @keyframes gradient-border {
@@ -178,27 +134,32 @@ input[type="text"], button {
     border: none;
     border-radius: 15px;
     padding: 13px 10px;
-    box-sizing: border-box;
-    font-size: 16px;
+    font-size: calc(14px + 0.5vw); 
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
 }
-
 
 #dynamic-input:focus {
     outline: none;
 }
 
-#dynamic-input::placeholder {
-    color: #696969;
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
-/* Styling for the footer */
+
 footer {
     display: none;
 }
+
 
 #calendly-bubble {
     bottom: 10px;
@@ -208,7 +169,6 @@ footer {
     padding: 15px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
     width: 300px;
     position: sticky;
     cursor: pointer;
@@ -225,93 +185,70 @@ footer {
     margin-bottom: 10px;
 }
 
-.calendly-inline-widget {
-    min-width: unset; 
-    max-width: 100%; 
-    height: auto; 
-}
-
 /* Media query for smaller screens (e.g., iPhones) */
-@media (max-width: 512px) {
-    #calendly-bubble {
-        right: unset;  /* Resets the 'right' property */
-        left: 10px; 
-    }
-}
-
-/* Media query for responsive design */
 @media (max-width: 768px) {
-    header {
-        text-align: center; /* Centering text for smaller screens */
+    .header-content {
+        width: 95%;
+        padding: 15px;
+        font-size: 0.9em;
     }
 
-    body {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    .social-btn {
         padding: 10px;
     }
 
-    .header-content {
-        width: 85%; /* Making header content responsive */
-        margin: 0 auto; /* Centering the header content */
-        font-size: 2.5vw; /* Dynamically scaling font size */
-        margin-bottom: 50px;
-        padding: 18px
-    }
-
-      /* Increase the size of social buttons on smaller screens */
-    .social-btn {
-        font-size: 250%; /* Increase font size */
-        padding: 15px; /* Increase padding */
-    }
-
     #interactive-area {
-        font-size: 4vw; /* Adjust font size for readability */
-        padding: 5%; /* Adjust padding */
-        max-height: 550px; /* Set max height for smaller screens */
-    }
-
-    #interactive-image {
-        max-width: 30%; /* Larger relative width on smaller screens */
-        margin-bottom: 5px; /* Reduced margin */
-    }
-
-    header .name, header .contact-info {
-        margin: 10px 0;
+        font-size: 1rem;
+        padding: 5%;
     }
 
     #calendly-bubble {
         right: 10px;
         bottom: -3px;
-        width: 60%; /* Adjust the width for smaller screens */
+        width: 80%; 
     }
 
     .calendly-inline-widget {
-        min-width: 300px; /* Adjust the min-width for smaller screens */
-        max-height: 500px; /* Adjust the max-height for smaller screens */
+        min-width: 300px;
+        max-height: 500px;
     }
 }
 
+@media (max-width: 512px) {
+    .header-content {
+        font-size: calc(10px + 0.5vw);
+    }
 
-/* Media query for larger screens */
-@media (min-width: 1024px) {
-    header {
-        padding-top: 20px; /* Further reduced padding for larger screens */
+    .social-btn {
+        font-size: 1.25rem;
+    }
+
+    #calendly-bubble {
+        right: unset;
+        left: 10px;
+        width: 80%;
     }
 
     #interactive-area {
-        height: 90%;
-        width: 30%;
-    }
-
-    #interactive-image {
-        width: 40%; /* Increased width for larger screens */
-        height: auto; /* Maintain aspect ratio */
+        font-size: 0.9rem;
     }
 }
 
-/* Additional Media Query for Mid-Sized Screens */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1024px) {
+    header {
+        padding-top: 20px;
+    }
+
+    #interactive-area {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
     #interactive-image {
-        width: 30%; /* Adjust this value for mid-sized screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 40%;
     }
 }
