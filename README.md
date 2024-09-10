@@ -37,5 +37,5 @@ I've designed the home page of this website to be minimalist yet alluring, demon
 - **Asynchronous JavaScript** to load external widgets without hindering page performance.
 
 ### Deployment
-The website is hosted on **GitHub Pages** and reflects my understanding of git and version control as part of the software development process.
+The website is deployed and hosted on Netlify at [jimmymishan.com](https://jimmymishan.com/), demonstrating my understanding of deployment as part of the software development process.
 
