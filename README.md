@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00cd8810-38c7-499b-8049-8cfedcaba906/deploy-status)](https://app.netlify.com/sites/oldsite-jimmymishan/deploys)
 ## Repository Description:
 A personal portfolio website showcasing my expertise in HTML, CSS, and JavaScript, demonstrating responsive design, interactive elements, and seamless user navigation.
 
